@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Editor</h1>
+        <div class="editor" id="drop-area">
+            <img id="image" src="" alt="Upload" class="hidden-image" crossorigin="anonymous">
+            <div id="drop-message">Drag & Drop or Click to Upload Image</div>
+        </div>
+        <div class="sliders">
+            <label>Grayscale <input type="range" id="grayscale" min="0" max="100" value="0"></label>
+            <label>Sepia <input type="range" id="sepia" min="0" max="100" value="0"></label>
+            <label>Brightness <input type="range" id="brightness" min="50" max="150" value="100"></label>
+            <label>Contrast <input type="range" id="contrast" min="50" max="150" value="100"></label>
+            <label>Blur <input type="range" id="blur" min="0" max="10" value="0"></label>
+        </div>
+        <button id="download" disabled>Download Edited Image</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
